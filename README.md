@@ -1,6 +1,6 @@
 # flutter_ngelancong
 
-A new Flutter project.
+Aplikasi berlibur berbasis Flutter.
 
 ## Getting Started
 
