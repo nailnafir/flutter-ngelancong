@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_ngelancong/ui/pages/pages.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(MyApp());
@@ -7,6 +9,9 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp();
+    return MaterialApp(
+      home: HomePage(),
+      theme: ThemeData(textTheme: GoogleFonts.poppinsTextTheme()),
+    );
   }
 }
