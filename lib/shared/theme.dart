@@ -25,4 +25,8 @@ class MyTheme {
       GoogleFonts.poppins().copyWith(color: Colors.black);
   static TextStyle whiteTextFont =
       GoogleFonts.poppins().copyWith(color: Colors.white);
+  static TextStyle redTextFont =
+      GoogleFonts.poppins().copyWith(color: Colors.red);
+  static TextStyle greenTextFont =
+      GoogleFonts.poppins().copyWith(color: primaryColor);
 }
