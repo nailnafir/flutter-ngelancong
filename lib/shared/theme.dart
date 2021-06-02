@@ -12,8 +12,14 @@ class MyTheme {
         end: Alignment.bottomCenter,
       );
 
-  static Color bgLight = Color(0xFFF5F5F5);
-  static Color bgDark = Color(0xFF15153F);
+  static Color bgLight = Color(0xFFE5E5E5);
+  static Color bgDark = Color(0xFF002533);
+  static Color primaryColor = Color(0xFF008675);
+  static Color secondaryColor = Color(0xFF00BCA5);
+  static Color accentColorPrimary = Color(0xFF628E9A);
+  static Color accentColorSecondary = Color(0xFF7ADFC9);
+  static Color darkGreen = Color(0xFF00425A);
+  static Color lightGreen = Color(0xFFC7F6F8);
 
   static TextStyle blackTextFont =
       GoogleFonts.poppins().copyWith(color: Colors.black);
