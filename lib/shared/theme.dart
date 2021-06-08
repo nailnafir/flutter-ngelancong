@@ -1,5 +1,12 @@
 part of 'shared.dart';
 
+abstract class ColorPallete {
+  static final backgroundColor = LinearGradient(colors: [
+    Color(0xFF42E695),
+    Color(0xFF3BB2B8),
+  ]);
+}
+
 class MyTheme {
   static List<Color> gradientColorTheme() => [
         Color(0xFF42E695),
