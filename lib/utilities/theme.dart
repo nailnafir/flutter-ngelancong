@@ -1,4 +1,4 @@
-part of 'shared.dart';
+part of 'utilities.dart';
 
 abstract class GradientTheme {
   static final backgroundColor = LinearGradient(
