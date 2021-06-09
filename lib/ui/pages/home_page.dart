@@ -4,7 +4,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: MyTheme.bgLight,
+      backgroundColor: ColorTheme.bgLight,
       body: SafeArea(
         child: ListView(
           children: [

@@ -1,10 +1,17 @@
 part of 'shared.dart';
 
-class MyConfig {
-  static const double defaultMargin = 24;
+abstract class LayoutConfig {
+  static double? deviceWidth;
+  static double? deviceHeight;
 
-  static double getDeviceWidth(BuildContext context) =>
-      MediaQuery.of(context).size.width;
-  static double getDeviceHeight(BuildContext context) =>
-      MediaQuery.of(context).size.height;
+  void init(BuildContext context) {
+    deviceWidth = MediaQuery.of(context).size.width;
+    deviceHeight = MediaQuery.of(context).size.height;
+  }
+}
+
+abstract class SpaceConfig {
+  static double shortMargin = 8;
+  static double normalMargin = 12;
+  static double longMargin = 24;
 }
