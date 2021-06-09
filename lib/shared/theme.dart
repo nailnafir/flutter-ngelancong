@@ -1,24 +1,17 @@
 part of 'shared.dart';
 
-abstract class ColorPallete {
-  static final backgroundColor = LinearGradient(colors: [
-    Color(0xFF42E695),
-    Color(0xFF3BB2B8),
-  ]);
+abstract class GradientTheme {
+  static final backgroundColor = LinearGradient(
+    colors: [
+      Color(0xFF42E695),
+      Color(0xFF3BB2B8),
+    ],
+    begin: Alignment.topCenter,
+    end: Alignment.bottomCenter,
+  );
 }
 
-class MyTheme {
-  static List<Color> gradientColorTheme() => [
-        Color(0xFF42E695),
-        Color(0xFF3BB2B8),
-      ];
-
-  static Gradient gradientTheme() => LinearGradient(
-        colors: MyTheme.gradientColorTheme(),
-        begin: Alignment.topCenter,
-        end: Alignment.bottomCenter,
-      );
-
+abstract class ColorTheme {
   static Color bgLight = Color(0xFFE5E5E5);
   static Color bgDark = Color(0xFF002533);
   static Color primaryColor = Color(0xFF008675);
@@ -27,7 +20,9 @@ class MyTheme {
   static Color accentColorSecondary = Color(0xFF7ADFC9);
   static Color darkGreen = Color(0xFF00425A);
   static Color lightGreen = Color(0xFFC7F6F8);
+}
 
+abstract class TextTheme {
   static TextStyle blackTextFont =
       GoogleFonts.poppins().copyWith(color: Colors.black);
   static TextStyle whiteTextFont =
@@ -35,5 +30,5 @@ class MyTheme {
   static TextStyle redTextFont =
       GoogleFonts.poppins().copyWith(color: Colors.red);
   static TextStyle greenTextFont =
-      GoogleFonts.poppins().copyWith(color: primaryColor);
+      GoogleFonts.poppins().copyWith(color: ColorTheme.primaryColor);
 }
